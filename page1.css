@@ -1,0 +1,55 @@
+html,body{
+    background: repeating-radial-gradient(circle,#532b78, #1a0f2e);
+    padding:0 20px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.center{
+    background-image: url("Rock.png"),url("paper.png"),url("Scissor.png");
+    background-repeat: no-repeat;
+    background-position:-150px -100px,calc(100% + 150px) calc(100% + 150px) ,-150px bottom ;
+    background-size: 350px ;
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+input[type="text"]{
+    border-radius:10px;
+    margin: 0;
+    border: solid #1a0f2e;
+}
+
+.game{
+    display: flex;
+    flex-direction: column;
+}
+.s1,.s2,.s3,.game{
+    display: none;
+    font-size: 30px;
+}
+
+img{
+    width: 30px;
+    height: 30px;
+}
+
+.person{
+    display: none;
+}
+
+.gametext{
+    color:aliceblue;
+    display: none;
+}
